@@ -22,6 +22,7 @@
 #> スコア作成
 scoreboard objectives add ts.RegenerationTime dummy
 scoreboard objectives add ts.UseSB used:snowball
+scoreboard objectives add ts.PlayerKill custom:player_kills
 
 # TODO:データ格納を書け！
 #> 鉱石のデータ格納
