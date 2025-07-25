@@ -1,56 +1,41 @@
 
 #> ゴリ押し検知だぁぁぁぁ！(マジで恥ずかしい。未来の僕、耐えてくれ。)
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"",\
-    y:"",\
-    z:""\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"1",\
-    y:"",\
-    z:""\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"",\
-    y:"1",\
-    z:""\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"",\
-    y:"",\
-    z:"1"\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"-1",\
-    y:"",\
-    z:""\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"",\
-    y:"-1",\
-    z:""\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"",\
-    y:"",\
-    z:"-1"\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"1",\
-    y:"",\
-    z:"1"\
-    }
-    function ts_snowballwar:bin/macros/unless/block/air \
-    {\
-    x:"-1",\
-    y:"",\
-    z:"-1"\
-    }
+    execute \
+    unless block ~ ~ ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~1 ~ ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~1 ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~ ~1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~-1 ~ ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~-1 ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~ ~-1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~1 ~1 ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~1 ~ ~1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~1 ~1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~-1 ~-1 ~ air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~-1 ~ ~-1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
+    execute \
+    unless block ~ ~-1 ~-1 air run \
+    function reizo_onlyonce_lib:_ {func:"ts_snowballwar:bin/summon/creeper"}
