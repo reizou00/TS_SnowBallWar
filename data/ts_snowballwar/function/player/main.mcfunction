@@ -36,5 +36,5 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
     at @s[scores={ts.UseSB=1..}] run \
     scoreboard players reset @s ts.UseSB
     # ストレージ
-    # data remove storage ts:_ Item
+    data remove storage ts:_ Item
     data modify storage reizo_onlyonce:_ ts_snowballwar:bin/summon/creeper set value 0b
