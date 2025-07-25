@@ -14,7 +14,7 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
         {\
         Item:\
             {\
-            Both:'"爆発雪玉"'\
+            Both:"爆発雪玉"\
             }\
         } run \
         function ts_snowballwar:item/explosion_sb/main
@@ -25,7 +25,7 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
         {\
         Item:\
             {\
-            Both:'"ダメージ雪玉"'\
+            Both:"ダメージ雪玉"\
             }\
         } run \
         function ts_snowballwar:item/damage_sb/main
@@ -36,5 +36,5 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
     at @s[scores={ts.UseSB=1..}] run \
     scoreboard players reset @s ts.UseSB
     # ストレージ
-    data remove storage ts:_ Item
+    # data remove storage ts:_ Item
     data modify storage reizo_onlyonce:_ ts_snowballwar:bin/summon/creeper set value 0b
