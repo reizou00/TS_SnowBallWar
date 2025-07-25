@@ -23,11 +23,6 @@
 scoreboard objectives add ts.RegenerationTime dummy
 scoreboard objectives add ts.UseSB used:snowball
 
-# dataがNullならset
-execute \
-unless data storage ts:_ SummonCreeper run \
-data modify storage ts:_ SummonCreeper set value 0b
-
 # TODO:データ格納を書け！
 #> 鉱石のデータ格納
     # 1

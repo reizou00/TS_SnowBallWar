@@ -37,5 +37,5 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
     scoreboard players reset @s ts.UseSB
     # ストレージ
     data remove storage ts:_ Item
-    data modify storage ts:_ SummonCreeper set value 0b
+    data modify storage reizo_onlyonce:_ ts_snowballwar:entity/explosion_sb/main set value 0b
     data modify storage reizo_onlyonce:_ ts_snowballwar:bin/summon/creeper set value 0b
