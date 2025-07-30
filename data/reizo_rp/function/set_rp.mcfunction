@@ -4,7 +4,7 @@ setblock ~ ~ ~ jukebox
 
 #> ディスプレイ系
     # レコード用のアイテムディスプレイを召喚(最初は透明)
-    summon item_display ~ ~1.04 ~ \
+    summon item_display ~ ~ ~ \
         {\
         item:\
             {\
@@ -45,43 +45,25 @@ setblock ~ ~ ~ jukebox
             }\
         }
 
-#> レコード用のアイテムディスプレイの位置を補正、Y座標は召喚時に決めているのでなし。
-    # X座標 〇.0とかになると数値が変わるよね。YとZは違うけど...
-        # まずは計算用のスコアに10倍にして移す
+#> レコードを移動
+    # dataゲット
+    # X
+    data modify storage reizo_rp:_ x set from block ~ ~ ~ x
+        # Yだけ1上げる
         execute \
-        store result score $X reizo_rp.Temp run \
-        data get block ~ ~ ~ x 10
-        # +か-の検知のために0にセット
-        scoreboard players set $0 reizo_rp.Temp 0
-        # 0よりでかい場合は5足す
+        store result score $y reizo_rp.Temp run \
+        data get block ~ ~ ~ y
+        scoreboard players add $y reizo_rp.Temp 1
+        # 適応
         execute \
-        if score $X reizo_rp.Temp > $0 reizo_rp.Temp run \
-        scoreboard players remove $X reizo_rp.Temp 5
-        # 0より小さい場合は5引く
-        execute \
-        if score $X reizo_rp.Temp < $0 reizo_rp.Temp run \
-        scoreboard players add $X reizo_rp.Temp 5
-        # 0.1倍にしてデータに格納
-        execute \
-        store result entity @n[type=item_display,tag=reizo_rp.Record] Pos[0] double 0.1 run \
-        scoreboard players get $X reizo_rp.Temp
-    # Z座標
-        # まずは計算用のスコアに10倍にして移す
-        execute \
-        store result score $Z reizo_rp.Temp run \
-        data get block ~ ~ ~ z 10
-        # 0よりでかい場合は5引く
-        execute \
-        if score $Z reizo_rp.Temp > $0 reizo_rp.Temp run \
-        scoreboard players add $Z reizo_rp.Temp 5
-        # 0より小さい場合は5足す
-        execute \
-        if score $Z reizo_rp.Temp < $0 reizo_rp.Temp run \
-        scoreboard players remove $Z reizo_rp.Temp 5
-        # 0.1倍にしてデータに格納
-        execute \
-        store result entity @n[type=item_display,tag=reizo_rp.Record] Pos[2] double 0.1 run \
-        scoreboard players get $Z reizo_rp.Temp
+        store result storage reizo_rp:_ y int 1 run \
+        scoreboard players get $y reizo_rp.Temp
+    # Z
+    data modify storage reizo_rp:_ z set from block ~ ~ ~ z
+    # data適応
+    execute \
+    as @n[tag=reizo_rp.Record] at @s run \
+    function reizo_rp:entity/record/tp with storage reizo_rp:_
 
 execute \
 positioned as @n[type=item_display,tag=reizo_rp.Record] \
