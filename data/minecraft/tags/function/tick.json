@@ -1,5 +1,6 @@
 {
     "values": [
-        "ts_snowballwar:main"
+        "ts_snowballwar:main",
+        "reizo_rp:core/main"
     ]
 }

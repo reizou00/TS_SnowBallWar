@@ -1,3 +1,4 @@
 
 # 座標とタイプを代入し、そこにsetblock!
-$setblock $(x) $(y) $(z) $(type)
+$execute in minecraft:overworld run \
+setblock $(x) $(y) $(z) $(type)
