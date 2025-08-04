@@ -72,9 +72,3 @@ execute if block -60 755 -264 air run data modify storage ts:_ Dig.18m_3 set val
 execute if block -60 755 -263 air run data modify storage ts:_ Dig.18m_4 set value 1b
 execute if block -56 758 -274 air run data modify storage ts:_ Dig.19m_1 set value 1b
 execute if block -56 757 -274 air run data modify storage ts:_ Dig.19m_2 set value 1b
-
-# Example
-# execute if block x y z air run data modify storage ts:_ Dig.OreName set value 1b
-
-# TODO:ここから続きやれ
-# /execute in minecraft:overworld run tp @s -79.93 891.00 -336.34 -757.29 42.45
