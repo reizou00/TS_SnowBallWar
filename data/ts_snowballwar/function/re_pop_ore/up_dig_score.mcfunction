@@ -1,0 +1,73 @@
+#> ts_snowballwar:re_pop_ore/up_dig_score
+#
+# 掘られているならそこのスコアアップ
+
+# Thanks for ChatGPT’s help!
+# こんなの書いたら絶対に重くなる。(2回目)
+execute if data storage ts:_ {Dig:{1m_1:1b}} run scoreboard players add 1m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{1m_2:1b}} run scoreboard players add 1m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{2m_1:1b}} run scoreboard players add 2m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{2m_2:1b}} run scoreboard players add 2m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{2m_3:1b}} run scoreboard players add 2m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{2m_4:1b}} run scoreboard players add 2m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{3m_1:1b}} run scoreboard players add 3m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{3m_2:1b}} run scoreboard players add 3m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{3m_3:1b}} run scoreboard players add 3m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{3m_4:1b}} run scoreboard players add 3m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{4m_1:1b}} run scoreboard players add 4m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{4m_2:1b}} run scoreboard players add 4m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{4m_3:1b}} run scoreboard players add 4m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{4m_4:1b}} run scoreboard players add 4m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{5m_1:1b}} run scoreboard players add 5m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{5m_2:1b}} run scoreboard players add 5m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{5m_3:1b}} run scoreboard players add 5m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{5m_4:1b}} run scoreboard players add 5m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{6m_1:1b}} run scoreboard players add 6m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{6m_2:1b}} run scoreboard players add 6m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{7m_1:1b}} run scoreboard players add 7m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{7m_2:1b}} run scoreboard players add 7m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{7m_3:1b}} run scoreboard players add 7m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{7m_4:1b}} run scoreboard players add 7m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{8m_1:1b}} run scoreboard players add 8m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{8m_2:1b}} run scoreboard players add 8m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{8m_3:1b}} run scoreboard players add 8m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{8m_4:1b}} run scoreboard players add 8m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{9m_1:1b}} run scoreboard players add 9m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{9m_2:1b}} run scoreboard players add 9m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{9m_3:1b}} run scoreboard players add 9m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{10m_1:1b}} run scoreboard players add 10m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{10m_2:1b}} run scoreboard players add 10m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{10m_3:1b}} run scoreboard players add 10m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{10m_4:1b}} run scoreboard players add 10m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{11m_1:1b}} run scoreboard players add 11m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{11m_2:1b}} run scoreboard players add 11m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{12m_1:1b}} run scoreboard players add 12m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{12m_2:1b}} run scoreboard players add 12m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{12m_3:1b}} run scoreboard players add 12m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{12m_4:1b}} run scoreboard players add 12m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{13m_1:1b}} run scoreboard players add 13m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{13m_2:1b}} run scoreboard players add 13m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{13m_3:1b}} run scoreboard players add 13m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{13m_4:1b}} run scoreboard players add 13m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{14m_1:1b}} run scoreboard players add 14m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{14m_2:1b}} run scoreboard players add 14m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{14m_3:1b}} run scoreboard players add 14m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{14m_4:1b}} run scoreboard players add 14m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{15m_1:1b}} run scoreboard players add 15m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{15m_2:1b}} run scoreboard players add 15m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{15m_3:1b}} run scoreboard players add 15m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{15m_4:1b}} run scoreboard players add 15m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{16m_1:1b}} run scoreboard players add 16m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{16m_2:1b}} run scoreboard players add 16m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{16m_3:1b}} run scoreboard players add 16m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{16m_4:1b}} run scoreboard players add 16m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{17m_1:1b}} run scoreboard players add 17m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{17m_2:1b}} run scoreboard players add 17m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{17m_3:1b}} run scoreboard players add 17m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{17m_4:1b}} run scoreboard players add 17m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{18m_1:1b}} run scoreboard players add 18m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{18m_2:1b}} run scoreboard players add 18m_2 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{18m_3:1b}} run scoreboard players add 18m_3 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{18m_4:1b}} run scoreboard players add 18m_4 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{19m_1:1b}} run scoreboard players add 19m_1 ts.RegenerationTime 1
+execute if data storage ts:_ {Dig:{19m_2:1b}} run scoreboard players add 19m_2 ts.RegenerationTime 1
