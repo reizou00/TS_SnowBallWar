@@ -24,3 +24,6 @@ scoreboard objectives add ts.RegenerationTime dummy
 scoreboard objectives add ts.UseSB used:snowball
 scoreboard objectives add ts.PlayerKill custom:player_kills
 scoreboard objectives add ts.Serif dummy
+scoreboard objectives add ts.Main_Ore.iron minecraft.mined:iron_ore
+scoreboard objectives add ts.Main_Ore.gold minecraft.mined:gold_ore
+scoreboard objectives add ts.Main_Ore.diamond minecraft.mined:diamond_ore

@@ -1,0 +1,12 @@
+execute unless block -24 789 -271 air run data modify storage ts:_ Dig.6m_1 set value 0b
+execute unless block -23 790 -270 air run data modify storage ts:_ Dig.6m_2 set value 0b
+execute unless block -59 803 -265 air run data modify storage ts:_ Dig.8m_1 set value 0b
+execute unless block -59 802 -265 air run data modify storage ts:_ Dig.8m_2 set value 0b
+execute unless block -59 802 -264 air run data modify storage ts:_ Dig.8m_3 set value 0b
+execute unless block -59 803 -264 air run data modify storage ts:_ Dig.8m_4 set value 0b
+execute unless block -56 840 -278 air run data modify storage ts:_ Dig.11m_1 set value 0b
+execute unless block -56 841 -278 air run data modify storage ts:_ Dig.11m_2 set value 0b
+execute unless block -90 904 -346 air run data modify storage ts:_ Dig.13m_1 set value 0b
+execute unless block -90 905 -346 air run data modify storage ts:_ Dig.13m_2 set value 0b
+execute unless block -91 905 -346 air run data modify storage ts:_ Dig.13m_3 set value 0b
+execute unless block -91 904 -346 air run data modify storage ts:_ Dig.13m_4 set value 0b

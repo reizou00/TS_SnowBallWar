@@ -38,3 +38,17 @@ data modify storage ts:_ Item.Both set from storage ts:_ Item.MainHand
     # ストレージ
     data remove storage ts:_ Item
     data modify storage reizo_onlyonce:_ ts_snowballwar:bin/summon/creeper set value 0b
+
+#> 採掘検知
+    # Iron
+    execute \
+    if score @s ts.Main_Ore.iron matches 1.. run \
+    function ts_snowballwar:player/mining/iron/_
+    # Gold
+    execute \
+    if score @s ts.Main_Ore.gold matches 1.. run \
+    function ts_snowballwar:player/mining/gold/_
+    # Diamond
+    execute \
+    if score @s ts.Main_Ore.diamond matches 1.. run \
+    function ts_snowballwar:player/mining/diamond/_
